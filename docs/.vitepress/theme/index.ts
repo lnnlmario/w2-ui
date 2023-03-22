@@ -1,17 +1,17 @@
-import DefaultTheme from "vitepress/theme";
+import DefaultTheme from 'vitepress/theme'
 
-import { useComponents } from "./useComponents";
+import { useBlockDemo } from '../plugins/blockDemo'
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
 
-import Tree from "../../../w2-ui/tree";
-import Button from "../../../w2-ui/button";
+import { Tree } from '../../../w2-ui/tree'
+import { Button } from '../../../w2-ui/button'
 
 export default {
-  ...DefaultTheme,
-  enhanceApp({ app }) {
-    useComponents(app);
+	...DefaultTheme,
+	enhanceApp({ app }) {
+		useBlockDemo(app)
 
-    app.component(Tree);
-    app.component(Button);
-  },
-};
+		app.component('w2-tree', Tree)
+		app.component('w2-button', Button)
+	},
+}
