@@ -1,10 +1,16 @@
 import { defineConfig } from "vitepress";
+import { demoBlockPlugin } from "vitepress-theme-demoblock";
 
 const config = defineConfig({
-  lang: 'zh-CN',
-  title: 'vitepress',
+  lang: "zh-CN",
+  title: "vitepress",
   themeConfig: {
     sidebar: sidebar(),
+  },
+  markdown: {
+    config: (md) => {
+      md.use(demoBlockPlugin);
+    },
   },
 });
 
