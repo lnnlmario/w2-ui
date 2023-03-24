@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # custom
-w2-docs/*/cache
+docs/*/cache
