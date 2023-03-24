@@ -1,0 +1,19 @@
+{
+  "name": "@w2ui/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "commander": "^10.0.0",
+    "esbuild": "^0.17.12",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^9.1.5",
+    "kolorist": "^1.7.0"
+  }
+}
