@@ -35,6 +35,12 @@ function sidebar() {
       },
       {
         text: "Data 数据展示",
+        items: [
+          {
+            text: "Badge 徽章",
+            link: "/components/badge/",
+          },
+        ],
       },
       {
         text: "Navigation 导航",
