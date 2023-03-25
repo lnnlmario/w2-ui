@@ -1,5 +1,8 @@
 @import './basic';
 
+$w2ui-text-dark: var(--w2ui-text-light, $w2ui-black);
+$w2ui-text-light: var(--w2ui-text-light, $w2ui-white);
+
 // 类型变量
 $w2ui-primary: var(--w2ui-primary, $w2ui-blue-500);
 $wu2i-success: var(--w2ui-success, $w2ui-green-500);

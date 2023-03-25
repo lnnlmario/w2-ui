@@ -28,11 +28,10 @@ importers:
       vitepress: 1.0.0-alpha.61
       vitepress-theme-demoblock: ^2.0.2
       w2-ui: workspace:*
-    dependencies:
-      w2-ui: link:../w2-ui
     devDependencies:
       vitepress: registry.npmmirror.com/vitepress/1.0.0-alpha.61
       vitepress-theme-demoblock: registry.npmmirror.com/vitepress-theme-demoblock/2.0.2
+      w2-ui: link:../w2-ui
 
   packages/w2-cli:
     specifiers:
@@ -1005,7 +1004,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: registry.npmmirror.com/vite/4.2.1_y7rghahg7ddu72pko63vhsxa44
+      vite: registry.npmmirror.com/vite/4.2.1
       vue: registry.npmmirror.com/vue/3.2.47
     dev: true
 

@@ -12,9 +12,12 @@
 
 ```vue
 <template>
-  <W2Badge type="primary" :value="12" class="item">
-    数字
+  <W2Badge :value="7" type="info" class="item">
+    文本
   </W2Badge>
+  <w2Badge :value="12" type="primary" class="item">
+    数字
+  </w2Badge>
   <W2Badge value="hot">
     文本
   </W2Badge>
@@ -51,7 +54,7 @@
 
 :::
 
-## 小红点
+## 封顶的数字
 使用`is-dot`属性，通过一个小红点来标记来告知用户有新内容。
 
 :::demo
@@ -71,6 +74,14 @@
 ```
 
 :::
+
+## 数值为0时是否展示
+
+TODO
+
+## 动画效果
+
+TODO
 
 ## API
 
