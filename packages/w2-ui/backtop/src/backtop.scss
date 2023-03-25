@@ -1,0 +1,20 @@
+@import '../../styles/variables.scss';
+
+.w2-backtop {
+  position: fixed;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: $w2ui-white;
+  color: $w2ui-primary;
+  cursor: pointer;
+  box-shadow: $w2ui-box-shadow-lighter;
+  // opacity: 0;
+  // transition: opacity 0.3s;
+  // &.w2ui-backtop--show {
+  //   opacity: 1;
+  // }
+}

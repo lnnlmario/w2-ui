@@ -44,6 +44,12 @@ function sidebar() {
       },
       {
         text: "Navigation 导航",
+        items: [
+          {
+            text: "Backtop 回到顶部",
+            link: "/components/backtop/",
+          }
+        ]
       },
       {
         text: "Feedback 反馈组件",

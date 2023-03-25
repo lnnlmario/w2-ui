@@ -3,21 +3,24 @@ import DefaultTheme from 'vitepress/theme'
 import { useBlockDemo } from '../plugins/blockDemo'
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
 
+// Basic 基础组件
+import Button from 'w2-ui/button'
 
-// import { Button } from 'w2-ui/button'
-
+// Data 数据展示
 import Badge from 'w2-ui/badge'
-// import { Tree } from 'w2-ui/tree'
+import Tree from 'w2-ui/tree'
+
+// Navigation 导航
+import Backtop from 'w2-ui/backtop'
 
 export default {
 	...DefaultTheme,
 	enhanceApp({ app }) {
 		useBlockDemo(app)
 
-		// app.component('w2-button', Button)
-
+		app.use(Tree)
 		app.use(Badge)
-		// app.component('w2-Badge', Badge)
-		// app.component('w2-tree', Tree)
+		app.use(Button)
+		app.use(Backtop)
 	},
 }
