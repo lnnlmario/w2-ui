@@ -4,6 +4,7 @@ import { useBlockDemo } from '../plugins/blockDemo'
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
 
 // Basic 基础组件
+import Icon from 'w2-ui/icon'
 import Button from 'w2-ui/button'
 
 // Data 数据展示
@@ -18,6 +19,7 @@ export default {
 	enhanceApp({ app }) {
 		useBlockDemo(app)
 
+		app.use(Icon)
 		app.use(Tree)
 		app.use(Badge)
 		app.use(Button)
