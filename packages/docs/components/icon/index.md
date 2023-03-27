@@ -21,6 +21,7 @@
     <w2Icon type="trash" />
     <w2Icon type="loading" />
     <w2Icon type="setting" />
+    <w2Icon type="upload" />
   </div>
 </template>
 

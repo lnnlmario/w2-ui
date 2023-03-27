@@ -1,0 +1,119 @@
+@import '../../styles/variables.scss';
+
+.w2-button {
+	cursor: pointer;
+	display: inline-block;
+	user-select: none;
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 6px;
+		padding: 0.5rem 1rem;
+		border-radius: 4px;
+		color: $w2ui-white;
+		font-size: $w2ui-sm;
+
+		&--default {
+			&:hover {
+				color: $w2ui-blue-500;
+				background-color: $w2ui-blue-100;
+			}
+			&:active {
+				border-color: $w2ui-blue-500;
+			}
+		}
+
+		&--primary {
+			&:hover {
+				background-color: $w2ui-blue-400;
+			}
+
+			&:active {
+				background-color: $w2ui-blue-600;
+			}
+		}
+
+		&--success {
+			&:hover {
+				background-color: $w2ui-green-400;
+			}
+
+			&:active {
+				background-color: $w2ui-green-600;
+			}
+		}
+
+		&--warning {
+			&:hover {
+				background-color: $w2ui-yellow-400;
+			}
+
+			&:active {
+				background-color: $w2ui-yellow-600;
+			}
+		}
+
+		&--danger {
+			&:hover {
+				background-color: $w2ui-red-400;
+			}
+
+			&:active {
+				background-color: $w2ui-red-600;
+			}
+		}
+
+		&--info {
+			&:hover {
+				background-color: $w2ui-gray-400;
+			}
+
+			&:active {
+				background-color: $w2ui-gray-600;
+			}
+		}
+	}
+
+	&--disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
+
+	&--round {
+		border-radius: 10rem;
+	}
+
+	&--circle {
+		padding: 0.5rem;
+		border-radius: 50%;
+	}
+
+	&--default {
+		color: $w2ui-black;
+		border: 1px solid $w2ui-gray-300;
+		background-color: $w2ui-white;
+	}
+
+	&--primary {
+		background-color: $w2ui-blue-500;
+	}
+
+	&--success {
+		background-color: $w2ui-green-500;
+	}
+
+	&--warning {
+		background-color: $w2ui-yellow-500;
+	}
+
+	&--danger {
+		background-color: $w2ui-red-500;
+	}
+
+	&--info {
+		background-color: $w2ui-info;
+		background-color: $w2ui-gray-500;
+	}
+}
