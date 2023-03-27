@@ -50,7 +50,7 @@
 ```
 :::
 
-## 禁用状体
+## 禁用状态
 
 :::demo
 ```vue
@@ -97,6 +97,37 @@
 </style>
 ```
 :::
+
+## 链接按钮
+
+:::demo
+```vue
+<template>
+  <div class="container">
+    <w2-button link>Default</w2-button>
+    <w2-button link type="primary">primary</w2-button>
+    <w2-button link type="success">success</w2-button>
+    <w2-button link type="warning">warning</w2-button>
+    <w2-button link type="danger">danger</w2-button>
+    <w2-button link type="info">info</w2-button>
+  </div>
+</template>
+
+<style scoped>
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+</style>
+```
+:::
+
 
 ## 图标按钮
 

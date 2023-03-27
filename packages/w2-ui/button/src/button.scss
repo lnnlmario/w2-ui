@@ -5,6 +5,14 @@
 	display: inline-block;
 	user-select: none;
 
+  &__link {
+    background-color: transparent !important;
+
+    &--primary {
+      color: $w2ui-blue-500;
+    }
+  }
+
 	&__content {
 		display: flex;
 		justify-content: space-between;
@@ -76,15 +84,18 @@
 		}
 	}
 
+  // 禁用状态
 	&--disabled {
 		cursor: not-allowed;
 		opacity: 0.5;
 	}
 
+  // 圆角按钮
 	&--round {
 		border-radius: 10rem;
 	}
 
+  // 圆形按钮
 	&--circle {
 		padding: 0.5rem;
 		border-radius: 50%;

@@ -13,16 +13,31 @@ export default defineComponent({
   setup(props: IButtonProps, ctx) {
     const ns = useNamespace('button')
 
+    const toClassStr = (arr: Array<String>) => arr.filter((s) => s).join(' ')
+
     const className = computed(() => {
       const base = ns.e('content')
-      return [
+      return toClassStr([
         base,
         ns.m(props.type),
         props.round ? ns.m('round') : '',
         props.circle ? ns.m('circle') : '',
-        props.disabled ? ns.m('disabled') : ns.em('content', props.type)
-      ].join(' ')
+        props.disabled ? ns.m('disabled') : '',
+        props.link ? ns.m('link') : '',
+        !props.disabled && !props.link ? ns.em('content', props.type) : '',
+      ])
     })
+
+    const linkClassName = computed(() => {
+      if (!props.link) return ''
+
+      return toClassStr([
+        ns.e('link'),
+        props.link ? ns.em('link', props.type) : '',
+      ])
+    })
+
+    const allClassName = computed(() => props.link ? linkClassName.value : className.value)
 
     // 按钮类型为`default`并且是圆形按钮时，颜色为`#333`，否则为`#fff`
     const getDefaultColor = () => props.type === 'default' as IButtonType && props.circle ? '#333' : '#fff'
@@ -49,7 +64,7 @@ export default defineComponent({
     return () => {
       return (
         <div class={ns.b()} onMouseenter={handleEnter} onMouseleave={handleLeave}>
-          <div class={className.value}>
+          <div class={allClassName.value}>
             {ctx.slots.icon?.() ?? <IconCpn />}
             {ctx.slots.default?.()}
           </div>
