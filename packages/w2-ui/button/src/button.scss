@@ -10,6 +10,14 @@
 
     &--primary {
       color: $w2ui-blue-500;
+
+      &:hover {
+        color: $w2ui-blue-400;
+      }
+  
+      &:active {
+        color: $w2ui-blue-600;
+      }
     }
   }
 
@@ -24,6 +32,10 @@
 		font-size: $w2ui-sm;
 
 		&--default {
+			color: $w2ui-black;
+			border: 1px solid $w2ui-gray-300;
+			background-color: $w2ui-white;
+
 			&:hover {
 				color: $w2ui-blue-500;
 				background-color: $w2ui-blue-100;
@@ -34,6 +46,8 @@
 		}
 
 		&--primary {
+      background-color: $w2ui-blue-500;
+
 			&:hover {
 				background-color: $w2ui-blue-400;
 			}
@@ -44,6 +58,8 @@
 		}
 
 		&--success {
+			background-color: $w2ui-green-500;
+
 			&:hover {
 				background-color: $w2ui-green-400;
 			}
@@ -54,6 +70,8 @@
 		}
 
 		&--warning {
+			background-color: $w2ui-yellow-500;
+
 			&:hover {
 				background-color: $w2ui-yellow-400;
 			}
@@ -64,6 +82,8 @@
 		}
 
 		&--danger {
+			background-color: $w2ui-red-500;
+
 			&:hover {
 				background-color: $w2ui-red-400;
 			}
@@ -74,6 +94,9 @@
 		}
 
 		&--info {
+			background-color: $w2ui-info;
+			background-color: $w2ui-gray-500;
+
 			&:hover {
 				background-color: $w2ui-gray-400;
 			}
@@ -88,6 +111,7 @@
 	&--disabled {
 		cursor: not-allowed;
 		opacity: 0.5;
+    pointer-events: none;
 	}
 
   // 圆角按钮
@@ -99,32 +123,5 @@
 	&--circle {
 		padding: 0.5rem;
 		border-radius: 50%;
-	}
-
-	&--default {
-		color: $w2ui-black;
-		border: 1px solid $w2ui-gray-300;
-		background-color: $w2ui-white;
-	}
-
-	&--primary {
-		background-color: $w2ui-blue-500;
-	}
-
-	&--success {
-		background-color: $w2ui-green-500;
-	}
-
-	&--warning {
-		background-color: $w2ui-yellow-500;
-	}
-
-	&--danger {
-		background-color: $w2ui-red-500;
-	}
-
-	&--info {
-		background-color: $w2ui-info;
-		background-color: $w2ui-gray-500;
 	}
 }

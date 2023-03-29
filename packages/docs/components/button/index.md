@@ -111,6 +111,14 @@
     <w2-button link type="danger">danger</w2-button>
     <w2-button link type="info">info</w2-button>
   </div>
+  <div class="container">
+    <w2-button disabled link>Default</w2-button>
+    <w2-button disabled link type="primary">primary</w2-button>
+    <w2-button disabled link type="success">success</w2-button>
+    <w2-button disabled link type="warning">warning</w2-button>
+    <w2-button disabled link type="danger">danger</w2-button>
+    <w2-button disabled link type="info">info</w2-button>
+  </div>
 </template>
 
 <style scoped>

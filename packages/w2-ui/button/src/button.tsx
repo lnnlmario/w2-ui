@@ -19,12 +19,10 @@ export default defineComponent({
       const base = ns.e('content')
       return toClassStr([
         base,
-        ns.m(props.type),
+        ns.em('content', props.type),
         props.round ? ns.m('round') : '',
         props.circle ? ns.m('circle') : '',
-        props.disabled ? ns.m('disabled') : '',
-        props.link ? ns.m('link') : '',
-        !props.disabled && !props.link ? ns.em('content', props.type) : '',
+        props.disabled ? ns.m('disabled') : ''
       ])
     })
 
@@ -33,6 +31,7 @@ export default defineComponent({
 
       return toClassStr([
         ns.e('link'),
+        props.disabled ? ns.m('disabled') : '',
         props.link ? ns.em('link', props.type) : '',
       ])
     })
@@ -53,7 +52,7 @@ export default defineComponent({
 
     // 用鼠标进入和离开事件来改变按钮颜色
     const handleEnter = () => {
-      if (props.type === 'default' as IButtonType) {
+      if (props.type === 'default' as IButtonType && !props.disabled) {
         color.value = '#3B82F6'
       }
     }
