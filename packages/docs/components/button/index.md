@@ -8,7 +8,7 @@
 ```vue
 <template>
   <div class="container">
-    <w2-button>Default</w2-button>
+    <w2-button>default</w2-button>
     <w2-button type="primary">primary</w2-button>
     <w2-button type="success">success</w2-button>
     <w2-button type="warning">warning</w2-button>
@@ -17,7 +17,7 @@
   </div>
 
   <div class="container mt-1">
-    <w2-button round>Default</w2-button>
+    <w2-button round>default</w2-button>
     <w2-button round type="primary">primary</w2-button>
     <w2-button round type="success">success</w2-button>
     <w2-button round type="warning">warning</w2-button>
@@ -56,7 +56,7 @@
 ```vue
 <template>
   <div class="container">
-    <w2-button disabled>Default</w2-button>
+    <w2-button disabled>default</w2-button>
     <w2-button disabled type="primary">primary</w2-button>
     <w2-button disabled type="success">success</w2-button>
     <w2-button disabled type="warning">warning</w2-button>
@@ -65,7 +65,7 @@
   </div>
 
   <div class="container mt-1">
-    <w2-button disabled round>Default</w2-button>
+    <w2-button disabled round>default</w2-button>
     <w2-button disabled round type="primary">primary</w2-button>
     <w2-button disabled round type="success">success</w2-button>
     <w2-button disabled round type="warning">warning</w2-button>
@@ -104,7 +104,7 @@
 ```vue
 <template>
   <div class="container">
-    <w2-button link>Default</w2-button>
+    <w2-button link>default</w2-button>
     <w2-button link type="primary">primary</w2-button>
     <w2-button link type="success">success</w2-button>
     <w2-button link type="warning">warning</w2-button>
@@ -112,7 +112,7 @@
     <w2-button link type="info">info</w2-button>
   </div>
   <div class="container">
-    <w2-button disabled link>Default</w2-button>
+    <w2-button disabled link>default</w2-button>
     <w2-button disabled link type="primary">primary</w2-button>
     <w2-button disabled link type="success">success</w2-button>
     <w2-button disabled link type="warning">warning</w2-button>

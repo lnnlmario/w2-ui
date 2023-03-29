@@ -8,6 +8,17 @@
   &__link {
     background-color: transparent !important;
 
+		&--default {
+			color: $w2ui-gray-600;
+
+			&:hover {
+				color: $w2ui-gray-500;
+			}
+			&:active {
+				color: $w2ui-gray-400;
+			}
+		}
+
     &--primary {
       color: $w2ui-blue-500;
 
@@ -19,6 +30,54 @@
         color: $w2ui-blue-600;
       }
     }
+
+		&--success {
+			color: $w2ui-green-500;
+
+			&:hover {
+				color: $w2ui-green-400;
+			}
+
+			&:active {
+				color: $w2ui-green-600;
+			}
+		}
+
+		&--warning {
+			color: $w2ui-yellow-500;
+
+			&:hover {
+				color: $w2ui-yellow-400;
+			}
+
+			&:active {
+				color: $w2ui-yellow-600;
+			}
+		}
+
+		&--danger {
+			color: $w2ui-red-500;
+
+			&:hover {
+				color: $w2ui-red-400;
+			}
+
+			&:active {
+				color: $w2ui-red-600;
+			}
+		}
+
+		&--info {
+			color: $w2ui-gray-500;
+
+			&:hover {
+				color: $w2ui-gray-400;
+			}
+
+			&:active {
+				color: $w2ui-gray-600;
+			}
+		}
   }
 
 	&__content {
