@@ -27,11 +27,9 @@ importers:
     specifiers:
       vitepress: 1.0.0-alpha.61
       vitepress-theme-demoblock: ^2.0.2
-      w2-ui: workspace:*
     devDependencies:
       vitepress: registry.npmmirror.com/vitepress/1.0.0-alpha.61
       vitepress-theme-demoblock: registry.npmmirror.com/vitepress-theme-demoblock/2.0.2
-      w2-ui: link:../w2-ui
 
   packages/w2-cli:
     specifiers:

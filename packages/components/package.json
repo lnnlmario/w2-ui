@@ -1,7 +1,7 @@
 {
-  "name": "w2-ui",
+  "name": "@w2ui/components",
   "version": "1.0.0",
-  "description": "",
+  "description": "all components for w2ui",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
