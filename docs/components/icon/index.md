@@ -9,6 +9,8 @@
 ```vue
 <template>
   <div class="icon-view">
+    <w2Icon color="green">icon</w2Icon>
+    <w2Icon color="green" size="22">icon</w2Icon>
     <w2Icon type="search" />
     <w2Icon type="wrong" />
     <w2Icon type="yes" />
@@ -30,7 +32,7 @@
   display: flex;
   flex-direction: row;
   justify-content: start;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 </style>
 ```

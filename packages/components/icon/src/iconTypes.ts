@@ -18,7 +18,7 @@ export const iconProps = {
     type: String,
     default: '#9c9da0'
   }
-} as const
+} as const // 常量断言
 // as const 是ts的语法，告诉ts所断言的值以及该值所有层级的子属性都不可篡改
 
 export type IconProps = ExtractPropTypes<typeof iconProps>

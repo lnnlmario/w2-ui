@@ -1,33 +1,37 @@
-import { toRefs, computed, defineComponent, defineAsyncComponent } from 'vue'
+import { useNamespace } from '@w2ui/hooks'
+import { computed, defineComponent } from 'vue'
+import type { CSSProperties } from 'vue'
+
 import { iconProps, IconProps } from './iconTypes'
+
+import './icon.scss'
 
 export default defineComponent({
   name: 'W2Icon',
   props: iconProps,
-  setup(props: IconProps) {
+  setup(props: IconProps, ctx) {
+    const ns = useNamespace('icon')
     // 动态导入图标组件
-    const AsyncSvg = defineAsyncComponent(() => import(`./components/${props.type}`))
+    // const AsyncSvg = defineAsyncComponent(() => import(`./components/${props.type}`))
 
-    const { size, color } = toRefs(props)
-
-    // 设置图标颜色
-    const svgStyle = computed(() => ({
-      fill: color.value
-    }))
+    const style = computed(() => {
+      const { size, color } = props
+      const style: CSSProperties = {}
+      if (size) {
+        style.fontSize = `${size}px`
+      }
+      if (color) {
+        // 定义css变量
+        style['--color'] = color
+      }
+      return style
+    })
 
     return () => {
       return (
-        <svg
-          class="icon"
-          width={`${size.value}px`}
-          height={`${size.value}px`}
-          style={svgStyle.value}
-          viewBox="0 0 1024 1024"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <AsyncSvg />
-        </svg>
+        <i class={ns.b()} style={style.value}>
+          {ctx.slots.default?.()}
+        </i>
       )
     }
   }
