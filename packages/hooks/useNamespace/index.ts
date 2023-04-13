@@ -1,4 +1,4 @@
-export type UseNamespace = {
+export type IUseNamespace = {
 	b: () => string
 	e: (el: string) => string
 	m: (modifier: string) => string
@@ -19,7 +19,7 @@ const createBem = (block: string, element?: string, modifier?: string): string =
 	return cls
 }
 
-const useNamespace = (block: string, needDot = false): UseNamespace => {
+export const useNamespace = (block: string, needDot = false): IUseNamespace => {
 	const ns = needDot ? `.w2-${block}` : `w2-${block}`
 
 	const b = () => createBem(ns)
@@ -29,5 +29,3 @@ const useNamespace = (block: string, needDot = false): UseNamespace => {
 
 	return { b, e, m, em }
 }
-
-export default useNamespace

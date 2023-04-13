@@ -1,8 +1,8 @@
+import { useNamespace } from '@w2ui/hooks'
 import { ref, computed, defineComponent } from "vue";
 
 import { Icon } from '../../icon'
 import { buttonProps, IButtonProps, IButtonType } from './buttonTypes'
-import useNamespace from '../../common/composables/useNamespace'
 
 import './button.scss'
 

@@ -1,0 +1,7 @@
+{
+  "name": "@w2ui/hooks",
+  "version": "1.0.0",
+  "description": "w2-ui composables",
+  "main": "index.js",
+  "license": "ISC"
+}

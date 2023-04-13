@@ -1,5 +1,5 @@
+import { useNamespace } from '@w2ui/hooks'
 import { defineComponent, computed } from 'vue'
-import useNamespace from '../../common/composables/useNamespace'
 import './badge.scss'
 
 import { badgeProps, BadgeProps } from './badgeTypes'
