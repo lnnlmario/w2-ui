@@ -142,6 +142,29 @@
 :::demo 
 ```vue
 <template class="container">
+  <w2-button type="primary">default</w2-button>
+  <w2-button type="primary" size="default">default</w2-button>
+  <w2-button type="primary" size="">primary</w2-button>
+  <w2-button type="primary" size="">primary</w2-button>
+</template>
+
+<style scoped>
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+</>
+```
+:::
+
+## 调整尺寸
+
+:::demo
+
+```vue
+<template class="container">
   <w2-button type="primary" icon="edit" />
   <w2-button type="primary" icon="search">搜索</w2-button>
   <w2-button type="primary">
@@ -158,4 +181,5 @@
 }
 </>
 ```
+
 :::

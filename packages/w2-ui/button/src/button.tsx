@@ -20,6 +20,7 @@ export default defineComponent({
       return toClassStr([
         base,
         ns.em('content', props.type),
+        ns.m(props.size),
         props.round ? ns.m('round') : '',
         props.circle ? ns.m('circle') : '',
         props.disabled ? ns.m('disabled') : ''

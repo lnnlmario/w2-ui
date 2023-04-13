@@ -10,7 +10,7 @@ export const iconProps = {
 	},
 	// 图标尺寸
 	size: {
-		type: Number,
+		type: [Number, String] as PropType<number | string>,
 		default: 14,
 	},
   // 图标颜色
@@ -18,6 +18,7 @@ export const iconProps = {
     type: String,
     default: '#9c9da0'
   }
-}
+} as const
+// as const 是ts的语法，告诉ts所断言的值以及该值所有层级的子属性都不可篡改
 
 export type IconProps = ExtractPropTypes<typeof iconProps>

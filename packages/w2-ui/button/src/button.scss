@@ -85,10 +85,8 @@
 		justify-content: space-between;
 		align-items: center;
 		gap: 6px;
-		padding: 0.5rem 1rem;
 		border-radius: 4px;
 		color: $w2ui-white;
-		font-size: $w2ui-sm;
 
 		&--default {
 			color: $w2ui-black;
@@ -174,13 +172,26 @@
 	}
 
   // 圆角按钮
-	&--round {
+	&--round { 
 		border-radius: 10rem;
 	}
 
   // 圆形按钮
 	&--circle {
-		padding: 0.5rem;
+		padding: 0.5rem !important;
 		border-radius: 50%;
+	}
+
+	&--sm {
+
+	}
+
+	&--default {
+		padding: 0.5rem 1rem;
+		font-size: $w2ui-sm;
+	}
+
+	&--lg {
+		
 	}
 }
