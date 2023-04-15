@@ -1,0 +1,197 @@
+@import '../../styles/variables.scss';
+
+.w2-button {
+	cursor: pointer;
+	display: inline-block;
+	user-select: none;
+
+  &__link {
+    background-color: transparent !important;
+
+		&--default {
+			color: $w2ui-gray-600;
+
+			&:hover {
+				color: $w2ui-gray-500;
+			}
+			&:active {
+				color: $w2ui-gray-400;
+			}
+		}
+
+    &--primary {
+      color: $w2ui-blue-500;
+
+      &:hover {
+        color: $w2ui-blue-400;
+      }
+  
+      &:active {
+        color: $w2ui-blue-600;
+      }
+    }
+
+		&--success {
+			color: $w2ui-green-500;
+
+			&:hover {
+				color: $w2ui-green-400;
+			}
+
+			&:active {
+				color: $w2ui-green-600;
+			}
+		}
+
+		&--warning {
+			color: $w2ui-yellow-500;
+
+			&:hover {
+				color: $w2ui-yellow-400;
+			}
+
+			&:active {
+				color: $w2ui-yellow-600;
+			}
+		}
+
+		&--danger {
+			color: $w2ui-red-500;
+
+			&:hover {
+				color: $w2ui-red-400;
+			}
+
+			&:active {
+				color: $w2ui-red-600;
+			}
+		}
+
+		&--info {
+			color: $w2ui-gray-500;
+
+			&:hover {
+				color: $w2ui-gray-400;
+			}
+
+			&:active {
+				color: $w2ui-gray-600;
+			}
+		}
+  }
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 6px;
+		border-radius: 4px;
+		color: $w2ui-white;
+
+		&--default {
+			color: $w2ui-black;
+			border: 1px solid $w2ui-gray-300;
+			background-color: $w2ui-white;
+
+			&:hover {
+				color: $w2ui-blue-500;
+				background-color: $w2ui-blue-100;
+			}
+			&:active {
+				border-color: $w2ui-blue-500;
+			}
+		}
+
+		&--primary {
+      background-color: $w2ui-blue-500;
+
+			&:hover {
+				background-color: $w2ui-blue-400;
+			}
+
+			&:active {
+				background-color: $w2ui-blue-600;
+			}
+		}
+
+		&--success {
+			background-color: $w2ui-green-500;
+
+			&:hover {
+				background-color: $w2ui-green-400;
+			}
+
+			&:active {
+				background-color: $w2ui-green-600;
+			}
+		}
+
+		&--warning {
+			background-color: $w2ui-yellow-500;
+
+			&:hover {
+				background-color: $w2ui-yellow-400;
+			}
+
+			&:active {
+				background-color: $w2ui-yellow-600;
+			}
+		}
+
+		&--danger {
+			background-color: $w2ui-red-500;
+
+			&:hover {
+				background-color: $w2ui-red-400;
+			}
+
+			&:active {
+				background-color: $w2ui-red-600;
+			}
+		}
+
+		&--info {
+			background-color: $w2ui-info;
+			background-color: $w2ui-gray-500;
+
+			&:hover {
+				background-color: $w2ui-gray-400;
+			}
+
+			&:active {
+				background-color: $w2ui-gray-600;
+			}
+		}
+	}
+
+  // 禁用状态
+	&--disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+    pointer-events: none;
+	}
+
+  // 圆角按钮
+	&--round { 
+		border-radius: 10rem;
+	}
+
+  // 圆形按钮
+	&--circle {
+		padding: 0.5rem !important;
+		border-radius: 50%;
+	}
+
+	&--sm {
+
+	}
+
+	&--default {
+		padding: 0.5rem 1rem;
+		font-size: $w2ui-sm;
+	}
+
+	&--lg {
+		
+	}
+}

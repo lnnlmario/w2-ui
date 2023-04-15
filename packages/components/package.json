@@ -1,0 +1,14 @@
+{
+  "name": "@w2ui/components",
+  "version": "1.0.0",
+  "description": "all components for w2ui",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,12 @@
+@charset 'utf-8';
+@import './basic';
+
+$w2ui-text-dark: var(--w2ui-text-light, $w2ui-black);
+$w2ui-text-light: var(--w2ui-text-light, $w2ui-white);
+
+// 类型变量
+$w2ui-primary: var(--w2ui-primary, $w2ui-blue-500);
+$wu2i-success: var(--w2ui-success, $w2ui-green-500);
+$w2ui-warning: var(--w2ui-warning, $w2ui-yellow-500);
+$w2ui-danger: var(--w2ui-danger, $w2ui-red-500);
+$w2ui-info: var(--w2ui-info, $w2ui-gray-500);

@@ -1,3 +1,5 @@
 packages:
-  - 'packages/**'
+  - 'cli'
+  - 'docs'
+  - 'packages/*'
   - '!**/test/**'

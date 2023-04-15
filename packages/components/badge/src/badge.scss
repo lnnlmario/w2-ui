@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+.w2-badge {
+	position: relative;
+	display: inline-block;
+
+	&__content {
+		position: absolute;
+		top: 0;
+		right: 0;
+    color: $w2ui-white;
+    transform: translate(100%);
+	}
+
+  &--value {
+    top: -25%;
+    padding: 0 6px;
+    height: $w2ui-base;
+    line-height: $w2ui-base;
+    font-size: $w2ui-xs;
+    border-radius: 100px;
+  }
+
+	&--dot {
+		width: calc($w2ui-base / 2);
+		height: calc($w2ui-base / 2);
+		border-radius: 50%;
+	}
+
+	&--primary {
+		background-color: $w2ui-primary;
+	}
+
+	&--success {
+		background-color: $wu2i-success;
+	}
+
+	&--warning {
+		background-color: $w2ui-warning;
+	}
+
+	&--danger {
+		background-color: $w2ui-danger;
+	}
+
+	&--info {
+		background-color: $w2ui-info;
+	}
+}
