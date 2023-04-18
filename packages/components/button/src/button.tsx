@@ -63,12 +63,12 @@ export default defineComponent({
 
     return () => {
       return (
-        <div class={ns.b()} onMouseenter={handleEnter} onMouseleave={handleLeave}>
+        <button class={ns.b()} disabled={props.disabled} onMouseenter={handleEnter} onMouseleave={handleLeave}>
           <div class={allClassName.value}>
             {ctx.slots.icon?.() ?? <IconCpn />}
             {ctx.slots.default?.()}
           </div>
-        </div>
+        </button>
       )
     }
   }
