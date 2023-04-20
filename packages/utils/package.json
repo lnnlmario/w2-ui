@@ -1,0 +1,7 @@
+{
+  "name": "@lnnlmario/utils",
+  "version": "0.0.1-alpha",
+  "description": "lnnlmario utils.",
+  "main": "index.ts",
+  "license": "ISC"
+}

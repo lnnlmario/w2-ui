@@ -8,9 +8,14 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "docs:dev": "pnpm run -C docs docs:dev",
+    "docs:build": "pnpm run -C docs build",
+    "docs:serve": "pnpm run -C docs serve"
   },
   "dependencies": {
+    "@lnnlmario/icons": "^1.0.1",
+    "@lnnlmario/utils": "workspace:*",
     "@w2ui/components": "workspace:*",
     "@w2ui/hooks": "workspace:*",
     "vue": "^3.2.47"
