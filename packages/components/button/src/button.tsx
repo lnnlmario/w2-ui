@@ -1,4 +1,4 @@
-import { useNamespace } from '@w2ui/hooks'
+import { useNamespace } from '@lnnlmario/hooks'
 import { ref, computed, defineComponent } from "vue";
 
 import { Icon } from '../../icon'
@@ -63,12 +63,12 @@ export default defineComponent({
 
     return () => {
       return (
-        <div class={ns.b()} onMouseenter={handleEnter} onMouseleave={handleLeave}>
+        <button class={ns.b()} disabled={props.disabled} onMouseenter={handleEnter} onMouseleave={handleLeave}>
           <div class={allClassName.value}>
             {ctx.slots.icon?.() ?? <IconCpn />}
             {ctx.slots.default?.()}
           </div>
-        </div>
+        </button>
       )
     }
   }

@@ -9,21 +9,11 @@
 ```vue
 <template>
   <div class="icon-view">
-    <w2Icon color="green">icon</w2Icon>
-    <w2Icon color="green" size="22">icon</w2Icon>
+    <w2Icon color="pink">icon</w2Icon>
+    <w2Icon color="green"><W2IconAim></w2Icon>
+    <w2Icon color="green" size="22"><W2IconReading></w2Icon>
     <w2Icon type="search" />
-    <w2Icon type="wrong" />
-    <w2Icon type="yes" />
     <w2Icon type="edit" />
-    <w2Icon type="up" />
-    <w2Icon type="right" />
-    <w2Icon type="down" />
-    <w2Icon type="left" />
-    <w2Icon type="collection" />
-    <w2Icon type="trash" />
-    <w2Icon type="loading" />
-    <w2Icon type="setting" />
-    <w2Icon type="upload" />
   </div>
 </template>
 

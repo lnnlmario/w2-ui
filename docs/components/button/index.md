@@ -26,11 +26,11 @@
   </div>
 
   <div class="container mt-1">
-    <w2-button circle icon="trash" />
+    <w2-button circle icon="delete" />
     <w2-button circle type="primary" icon="search" />
-    <w2-button circle type="success" icon="yes"/>
-    <w2-button circle type="warning" icon="wrong"/>
-    <w2-button circle type="danger" icon="left"/>
+    <w2-button circle type="success" icon="edit"/>
+    <w2-button circle type="warning" icon="failed"/>
+    <w2-button circle type="danger" icon="top"/>
     <w2-button circle type="info" icon="right" />
   </div>
 </template>

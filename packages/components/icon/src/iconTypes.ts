@@ -1,11 +1,9 @@
 import { PropType, ExtractPropTypes } from 'vue'
 
-export type iconTypes = 'search' | 'wrong' | 'edit' | 'right' | 'yes' | 'collection' | 'trash' | 'loading' | 'setting' | 'down' | 'left' | 'up'
-
 export const iconProps = {
 	// 图表名称
 	type: {
-		type: String as PropType<iconTypes>,
+		type: String as PropType<string>,
 		default: 'search',
 	},
 	// 图标尺寸

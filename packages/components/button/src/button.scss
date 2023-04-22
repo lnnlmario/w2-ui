@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .w2-button {
-	cursor: pointer;
+	// cursor: pointer;
 	display: inline-block;
 	user-select: none;
 
@@ -166,7 +166,7 @@
 
   // 禁用状态
 	&--disabled {
-		cursor: not-allowed;
+		cursor: not-allowed !important;
 		opacity: 0.5;
     pointer-events: none;
 	}

@@ -1,4 +1,4 @@
-import { useNamespace } from '@w2ui/hooks'
+import { useNamespace } from '@lnnlmario/hooks'
 import { defineComponent, computed } from 'vue'
 
 import useBacktop from './composables/useBacktop'
