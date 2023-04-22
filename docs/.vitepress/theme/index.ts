@@ -6,15 +6,15 @@ import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
 import { Reading, Aim } from '@lnnlmario/icons'
 
 // Basic 基础组件
-import Icon from '@w2ui/components/icon'
-import Button from '@w2ui/components/button'
+import Icon from '@lnnlmario/components/icon'
+import Button from '@lnnlmario/components/button'
 
 // Data 数据展示
-import Badge from '@w2ui/components/badge'
-import Tree from '@w2ui/components/tree'
+import Badge from '@lnnlmario/components/badge'
+import Tree from '@lnnlmario/components/tree'
 
 // Navigation 导航
-import Backtop from '@w2ui/components/backtop'
+import Backtop from '@lnnlmario/components/backtop'
 
 export default {
 	...DefaultTheme,

@@ -1,7 +1,7 @@
 {
   "name": "ww-ui",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,10 +14,10 @@
     "docs:serve": "pnpm run -C docs serve"
   },
   "dependencies": {
+    "@lnnlmario/components": "workspace:*",
+    "@lnnlmario/hooks": "workspace:*",
     "@lnnlmario/icons": "^1.0.1",
     "@lnnlmario/utils": "workspace:*",
-    "@w2ui/components": "workspace:*",
-    "@w2ui/hooks": "workspace:*",
     "vue": "^3.2.47"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { useNamespace } from '@w2ui/hooks'
+import { useNamespace } from '@lnnlmario/hooks'
 import { capitalize } from '@lnnlmario/utils'
 import { computed, defineComponent, defineAsyncComponent } from 'vue'
 import type { CSSProperties } from 'vue'

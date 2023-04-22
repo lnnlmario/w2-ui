@@ -4,18 +4,18 @@ importers:
 
   .:
     dependencies:
+      '@lnnlmario/components':
+        specifier: workspace:*
+        version: link:packages/components
+      '@lnnlmario/hooks':
+        specifier: workspace:^
+        version: link:packages/hooks
       '@lnnlmario/icons':
         specifier: ^1.0.1
         version: registry.npmmirror.com/@lnnlmario/icons@1.0.1(vue@3.2.47)
       '@lnnlmario/utils':
-        specifier: workspace:0.0.1-alpha
+        specifier: workspace:*
         version: link:packages/utils
-      '@w2ui/components':
-        specifier: workspace:*
-        version: link:packages/components
-      '@w2ui/hooks':
-        specifier: workspace:*
-        version: link:packages/hooks
       vue:
         specifier: ^3.2.47
         version: registry.npmmirror.com/vue@3.2.47

@@ -1,4 +1,4 @@
-import { useNamespace } from '@w2ui/hooks'
+import { useNamespace } from '@lnnlmario/hooks'
 import { ref, computed, defineComponent } from "vue";
 
 import { Icon } from '../../icon'
