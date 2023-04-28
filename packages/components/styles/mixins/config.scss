@@ -1,0 +1,10 @@
+// 设置所有组件以`w2`开头
+$namespace: 'w2' !default;
+
+// 状态属性前缀
+$state-prefix: 'is-' !default;
+
+// BEM字段分隔符
+$common-separator: '-' !default;
+$element-separator: '__' !default;
+$modifier-separator: '--' !default;

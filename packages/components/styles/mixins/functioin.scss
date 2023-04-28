@@ -1,0 +1,45 @@
+@use 'config';
+
+@function selectorToString($selector) {
+	// .el-button
+	$selector: inspect($selector);
+	// (.el-button)
+	$selector: str-slice($selector, $start: 2, $end: -2);
+	// 返回通过 inspect 和 str-slice 方法转换成的字符串
+	@return $selector;
+}
+
+@function containModifier($selector) {
+	$selector: selectorToString($selector);
+
+	@if str-index($selector, $modifier-separator) {
+		@return true;
+	} @else {
+		@return false;
+	}
+}
+
+@function containWhenFlag($selector) {
+	$selector: selectorToString($selector);
+
+	@if str-index($selector, '.' + $state-prefix) {
+		@return true;
+	} @else {
+		@return false;
+	}
+}
+
+@function containPseudoClass($selector) {
+	$selector: selectorToString($selector);
+
+	@if str-index($selector, ':') {
+		@return true;
+	} @else {
+		@return false;
+	}
+}
+
+// 判断选择器是否包含modifier、is和伪类
+@function hitAllSpecialNestRule($selector) {
+	@return containModifier($selector) or containWhenFlag($selector) or containPseudoClass($selector);
+}

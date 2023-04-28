@@ -1,0 +1,56 @@
+@use 'config' as *;
+@use 'function' as *;
+
+// BEM
+@mixin b($block) {
+	// w2-button, 注意：这里定义成了全局变量，global将变量提升成为全局变量
+	$B: $namespace + $common-separator + $block !global;
+
+  // 使用插值语法将变量$B作为选择器使用
+	.#{$B} {
+		// 通过 @content 可以将 include{} 中传递过来的内容导入到指定位置
+		@content;
+	}
+}
+
+@mixin e($element) {
+	$E: $element !global;
+	$selector: &;
+	$currentSelector: '';
+
+	@each $unit in $element {
+		$currentSelector: #{$currentSelector + '.' + $B + $element-separator + $unit + ','};
+	}
+
+	// 判断父级选择器是否包含modifier、is和伪类，若是则e中定义的选择器需要嵌套到父级选择器中
+	@if hitAllSpecialNestRule($selector) {
+		@at-root {
+			#{$selector} {
+				#{$currentSelector} {
+					@content;
+				}
+			}
+		}
+	} @else {
+		@at-root {
+			#{$currentSelector} {
+				@content;
+			}
+		}
+	}
+}
+
+@mixin m($modifier) {
+	$selector: &;
+	$currentSelector: '';
+
+	@each $unit in $modifier {
+		$currentSelector: #{$currentSelector + $selector + $modifier-separator + $unit + ','};
+	}
+
+	@at-root {
+		#{$currentSelector} {
+			@content;
+		}
+	}
+}
