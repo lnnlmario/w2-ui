@@ -54,3 +54,17 @@
 		}
 	}
 }
+
+@mixin when($state) {
+	@at-root {
+		&.#{$state-separator + $state} {
+			@content;
+		}
+	}
+}
+
+@mixin pseudo($pseudo) {
+	@at-root #{&}#{':#{$pseudo}'} {
+		@content;
+	}
+}
