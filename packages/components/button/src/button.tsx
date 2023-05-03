@@ -32,7 +32,7 @@ export default defineComponent({
 
       return toClassStr([
         ns.e('link'),
-        props.disabled ? ns.m('disabled') : '',
+        props.disabled ? ns.is('disabled') : '',
         props.link ? ns.em('link', props.type) : '',
       ])
     })

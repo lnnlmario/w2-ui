@@ -172,9 +172,10 @@
 
 	// 禁用状态
 	@include when(disabled) {
-		cursor: not-allowed !important;
 		opacity: 0.5;
-		// pointer-events: none;
+		// TODO: 下面两个样式冲突了
+		cursor: not-allowed;
+		pointer-events: none;
 	}
 
 	// 圆角按钮
