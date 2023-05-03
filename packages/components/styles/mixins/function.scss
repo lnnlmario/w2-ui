@@ -4,7 +4,7 @@
 	// .el-button
 	$selector: inspect($selector);
 	// (.el-button)
-	$selector: str-slice($selector, $start: 2, $end: -2);
+	$selector: str-slice($selector, 2, -2);
 	// 返回通过 inspect 和 str-slice 方法转换成的字符串
 	@return $selector;
 }
@@ -12,7 +12,7 @@
 @function containModifier($selector) {
 	$selector: selectorToString($selector);
 
-	@if str-index($selector, $modifier-separator) {
+	@if str-index($selector, config.$modifier-separator) {
 		@return true;
 	} @else {
 		@return false;
@@ -22,7 +22,7 @@
 @function containWhenFlag($selector) {
 	$selector: selectorToString($selector);
 
-	@if str-index($selector, '.' + $state-prefix) {
+	@if str-index($selector, '.' + config.$state-prefix) {
 		@return true;
 	} @else {
 		@return false;

@@ -1,14 +1,15 @@
+@use '../../styles/mixins/mixins' as *;
 @import '../../styles/variables.scss';
 
-.w2-button {
+@include b(button) {
 	// cursor: pointer;
 	display: inline-block;
 	user-select: none;
 
-  &__link {
-    background-color: transparent !important;
+	@include e(link) {
+		background-color: transparent !important;
 
-		&--default {
+		@include m(default) {
 			color: $w2ui-gray-600;
 
 			&:hover {
@@ -19,19 +20,19 @@
 			}
 		}
 
-    &--primary {
-      color: $w2ui-blue-500;
+		@include m(primary) {
+			color: $w2ui-blue-500;
 
-      &:hover {
-        color: $w2ui-blue-400;
-      }
-  
-      &:active {
-        color: $w2ui-blue-600;
-      }
-    }
+			&:hover {
+				color: $w2ui-blue-400;
+			}
 
-		&--success {
+			&:active {
+				color: $w2ui-blue-600;
+			}
+		}
+
+		@include m(success) {
 			color: $w2ui-green-500;
 
 			&:hover {
@@ -43,7 +44,7 @@
 			}
 		}
 
-		&--warning {
+		@include m(warning) {
 			color: $w2ui-yellow-500;
 
 			&:hover {
@@ -55,7 +56,7 @@
 			}
 		}
 
-		&--danger {
+		@include m(danger) {
 			color: $w2ui-red-500;
 
 			&:hover {
@@ -67,7 +68,7 @@
 			}
 		}
 
-		&--info {
+		@include m(info) {
 			color: $w2ui-gray-500;
 
 			&:hover {
@@ -78,9 +79,9 @@
 				color: $w2ui-gray-600;
 			}
 		}
-  }
+	}
 
-	&__content {
+	@include e(content) {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -88,7 +89,7 @@
 		border-radius: 4px;
 		color: $w2ui-white;
 
-		&--default {
+		@include m(default) {
 			color: $w2ui-black;
 			border: 1px solid $w2ui-gray-300;
 			background-color: $w2ui-white;
@@ -102,8 +103,8 @@
 			}
 		}
 
-		&--primary {
-      background-color: $w2ui-blue-500;
+		@include m(primary) {
+			background-color: $w2ui-blue-500;
 
 			&:hover {
 				background-color: $w2ui-blue-400;
@@ -114,7 +115,7 @@
 			}
 		}
 
-		&--success {
+		@include m(success) {
 			background-color: $w2ui-green-500;
 
 			&:hover {
@@ -126,7 +127,7 @@
 			}
 		}
 
-		&--warning {
+		@include m(warning) {
 			background-color: $w2ui-yellow-500;
 
 			&:hover {
@@ -138,7 +139,7 @@
 			}
 		}
 
-		&--danger {
+		@include m(danger) {
 			background-color: $w2ui-red-500;
 
 			&:hover {
@@ -150,7 +151,7 @@
 			}
 		}
 
-		&--info {
+		@include m(info) {
 			background-color: $w2ui-info;
 			background-color: $w2ui-gray-500;
 
@@ -164,34 +165,26 @@
 		}
 	}
 
-  // 禁用状态
-	&--disabled {
+	// 禁用状态
+	@include m(disabled) {
 		cursor: not-allowed !important;
 		opacity: 0.5;
-    pointer-events: none;
+		pointer-events: none;
 	}
 
-  // 圆角按钮
-	&--round { 
+	// 圆角按钮
+	@include m(round) {
 		border-radius: 10rem;
 	}
 
-  // 圆形按钮
-	&--circle {
+	// 圆形按钮
+	@include m(circle) {
 		padding: 0.5rem !important;
 		border-radius: 50%;
 	}
 
-	&--sm {
-
-	}
-
-	&--default {
+	@include m(default) {
 		padding: 0.5rem 1rem;
 		font-size: $w2ui-sm;
-	}
-
-	&--lg {
-		
 	}
 }
