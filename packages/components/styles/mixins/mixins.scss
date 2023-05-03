@@ -57,7 +57,7 @@
 
 @mixin when($state) {
 	@at-root {
-		&.#{$state-separator + $state} {
+		&.#{$state-prefix + $state} {
 			@content;
 		}
 	}

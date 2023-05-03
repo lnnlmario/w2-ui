@@ -21,9 +21,9 @@ export default defineComponent({
         base,
         ns.em('content', props.type),
         ns.m(props.size),
-        props.round ? ns.m('round') : '',
-        props.circle ? ns.m('circle') : '',
-        props.disabled ? ns.m('disabled') : ''
+        props.round ? ns.is('round') : '',
+        props.circle ? ns.is('circle') : '',
+        props.disabled ? ns.is('disabled') : ''
       ])
     })
 
@@ -63,11 +63,14 @@ export default defineComponent({
 
     return () => {
       return (
-        <button class={ns.b()} disabled={props.disabled} onMouseenter={handleEnter} onMouseleave={handleLeave}>
-          <div class={allClassName.value}>
+        <button
+          class={`${ns.b()} ${allClassName.value}`}
+          disabled={props.disabled}
+          onMouseenter={handleEnter}
+          onMouseleave={handleLeave}
+        >
             {ctx.slots.icon?.() ?? <IconCpn />}
             {ctx.slots.default?.()}
-          </div>
         </button>
       )
     }

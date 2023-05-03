@@ -165,26 +165,26 @@
 		}
 	}
 
+	@include m(default) {
+		padding: 0.5rem 1rem;
+		font-size: $w2ui-sm;
+	}
+
 	// 禁用状态
-	@include m(disabled) {
+	@include when(disabled) {
 		cursor: not-allowed !important;
 		opacity: 0.5;
-		pointer-events: none;
+		// pointer-events: none;
 	}
 
 	// 圆角按钮
-	@include m(round) {
+	@include when(round) {
 		border-radius: 10rem;
 	}
 
 	// 圆形按钮
-	@include m(circle) {
+	@include when(circle) {
 		padding: 0.5rem !important;
 		border-radius: 50%;
-	}
-
-	@include m(default) {
-		padding: 0.5rem 1rem;
-		font-size: $w2ui-sm;
 	}
 }
