@@ -74,11 +74,11 @@
   </div>
 
   <div class="container mt-1">
-    <w2-button disabled circle icon="trash" />
+    <w2-button disabled circle icon="delete" />
     <w2-button disabled circle type="primary" icon="search" />
-    <w2-button disabled circle type="success" icon="yes"/>
-    <w2-button disabled circle type="warning" icon="wrong"/>
-    <w2-button disabled circle type="danger" icon="left"/>
+    <w2-button disabled circle type="success" icon="edit"/>
+    <w2-button disabled circle type="warning" icon="failed"/>
+    <w2-button disabled circle type="danger" icon="top"/>
     <w2-button disabled circle type="info" icon="right" />
   </div>
 </template>
@@ -142,10 +142,12 @@
 :::demo 
 ```vue
 <template class="container">
-  <w2-button type="primary">default</w2-button>
-  <w2-button type="primary" size="default">default</w2-button>
-  <w2-button type="primary" size="">primary</w2-button>
-  <w2-button type="primary" size="">primary</w2-button>
+  <w2-button type="primary" icon="delete"></w2-button>
+  <w2-button type="default" size="default">
+    <w2-icon>
+      <W2IconAim />
+    </w2-icon>
+  </w2-button>
 </template>
 
 <style scoped>
