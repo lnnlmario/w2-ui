@@ -43,3 +43,29 @@
 @function hitAllSpecialNestRule($selector) {
 	@return containModifier($selector) or containWhenFlag($selector) or containPseudoClass($selector);
 }
+
+// 定义一个函数，用于拼接css变量名
+// 例子：joinVarName('button', 'primary') => --w2-button-primary
+@function joinVarName($list) {
+	$name: '--' + config.$namespace;
+
+	@each $item in $list {
+		@if $item != '' {
+			$name: $name + '-' + $item;
+		}
+	}
+
+	@return $name;
+}
+
+// 定义一个函数，用于获取css变量值
+// 例子：getCssVar('button', 'primary') => var(--w2-button-primary)
+@function getCssVar($args...) {
+	@return var(#{joinVarName($args)});
+}
+
+// 定义一个函数，用于获取css变量值并设置默认值
+// 例子：getCssVarWithDefault('button', 'primary', 'red') => var(--w2-button-primary, red)
+@function getCssVarWithDefault($args, $default) {
+	@return var(#{joinVarName($args)}, $default);
+}
